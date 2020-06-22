@@ -7,6 +7,30 @@ set encoding=UTF-8
 set nohlsearch
 syntax on
 
+" === Installing pluggins === "
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'roxma/nvim-completion-manager'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+Plug 'christoomey/vim-system-copy'
+if has('nvim')
+	Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+	Plug 'Shougo/denite.nvim'
+	Plug 'roxma/nvim-yarp'
+	Plug 'roxma/vim-hug-neovim-rpc'
+endif
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'turbio/bracey.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
+
+call plug#end()
+
 " === setting up color scheme === "
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -52,29 +76,8 @@ if executable(s:clip)
 	augroup END
 end
 
-" === Installing pluggins === "
-call plug#begin('~/.config/nvim/plugged')
-
-Plug 'roxma/nvim-completion-manager'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'sheerun/vim-polyglot'
-Plug 'itchyny/lightline.vim'
-Plug 'christoomey/vim-system-copy'
-if has('nvim')
-	Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-	Plug 'Shougo/denite.nvim'
-	Plug 'roxma/nvim-yarp'
-	Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'turbio/bracey.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
-
-call plug#end()
+" === Setup Prettier command === "
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " ============================================================================ "
 " ===                             KEY MAPPINGS                             === "
