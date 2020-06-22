@@ -53,7 +53,7 @@ if executable(s:clip)
 end
 
 " === Installing pluggins === "
-call plug#begin('.config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'roxma/nvim-completion-manager'
 Plug 'SirVer/ultisnips'
