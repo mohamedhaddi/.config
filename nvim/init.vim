@@ -5,6 +5,7 @@ set number
 set relativenumber
 set encoding=UTF-8
 set nohlsearch
+set autoread
 syntax on
 
 " === Installing pluggins === "
@@ -119,6 +120,9 @@ nnoremap <C-S-h> :vertical resize -1<CR>
 nnoremap <C-S-k> :resize +1<CR>
 nnoremap <C-S-j> :resize -1<CR>
 
+" reload file to apply new changes
+nnoremap <F5> :e!<CR>
+
 " === Denite shorcuts === "
 "   ;         - Browser currently open buffers
 "   <leader>t - Browse list of files in current directory
@@ -130,7 +134,7 @@ nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 
 " Define mappings while in 'filter' mode
-"   <C-o>         - Switch to normal mode inside of search results
+"   ,             - Switch to normal mode inside of search results
 "   <Esc>         - Exit denite window in any mode
 "   <CR>          - Open currently selected file in any mode
 "   <C-t>         - Open currently selected file in a new tab
@@ -138,7 +142,7 @@ nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 "   <C-h>         - Open currently selected file in a horizontal split
 autocmd FileType denite-filter call s:denite_filter_my_settings()
 function! s:denite_filter_my_settings() abort
-	imap <silent><buffer> <C-o>
+	imap <silent><buffer> , 
 				\ <Plug>(denite_filter_quit)
 	inoremap <silent><buffer><expr> <Esc>
 				\ denite#do_map('quit')
@@ -285,7 +289,7 @@ nnoremap <silent> <C-x> :NERDTreeToggle<CR>
 
 " === Bracey setup ==="
 " let g:bracey_server_path="http://localhost"
-" let g:bracey_server_port=8000
+let g:bracey_server_port=8880
 " let g:bracey_browser_command='xdg-open'
 " let g:bracey_server_allow_remote_connections=1
 
