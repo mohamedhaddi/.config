@@ -239,6 +239,22 @@ inoremap <silent><expr> <TAB>
 "Close preview window when completion is done.
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
+" Use <Tab> and <S-Tab> to navigate the completion list
+inoremap <expr> <A-S-j> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <A-S-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Use <cr> to confirm completion
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" use <c-space>for trigger completion
+inoremap <silent><expr> <NUL> coc#refresh()
+
+" make <cr> select the first completion item and confirm the completion when no item has been selected
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+
+" make coc.nvim format your code on <cr>
+"inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 " === Denite setup ==="
 " Wrap in try/catch to avoid errors on initial install before plugin is available
 try
