@@ -7,6 +7,7 @@ set encoding=UTF-8
 set nohlsearch
 set autoread
 syntax on
+let mapleader = ","
 
 " === Installing pluggins === "
 call plug#begin('~/.config/nvim/plugged')
@@ -122,6 +123,14 @@ nnoremap <C-S-j> :resize -1<CR>
 
 " reload file to apply new changes
 nnoremap <F5> :e!<CR>
+
+" === coc.nvim === "
+nmap <silent> <leader>dd <Plug>(coc-definition)
+nmap <silent> <leader>dr <Plug>(coc-references)
+nmap <silent> <leader>dj <Plug>(coc-implementation)
+
+" insert line on enter
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " === Denite shorcuts === "
 "   ;         - Browser currently open buffers
