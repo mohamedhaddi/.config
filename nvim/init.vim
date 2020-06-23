@@ -10,6 +10,7 @@ syntax on
 let mapleader = ","
 autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " === Installing pluggins === "
 call plug#begin('~/.config/nvim/plugged')
