@@ -8,6 +8,8 @@ set nohlsearch
 set autoread
 syntax on
 let mapleader = ","
+autocmd CursorHold,CursorHoldI * update
+set updatetime=2000
 
 " === Installing pluggins === "
 call plug#begin('~/.config/nvim/plugged')
@@ -133,11 +135,11 @@ nmap <silent> <leader>dj <Plug>(coc-implementation)
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " === Denite shorcuts === "
-"   ;         - Browser currently open buffers
+"   <leader>; - Browser currently open buffers
 "   <leader>t - Browse list of files in current directory
 "   <leader>g - Search current directory for occurences of given term and close window if no results
 "   <leader>j - Search current directory for occurences of word under cursor
-nmap ; :Denite buffer<CR>
+nmap <leader>; :Denite buffer<CR>
 nmap <leader>t :DeniteProjectDir file/rec<CR>
 nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
@@ -151,7 +153,7 @@ nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 "   <C-h>         - Open currently selected file in a horizontal split
 autocmd FileType denite-filter call s:denite_filter_my_settings()
 function! s:denite_filter_my_settings() abort
-	imap <silent><buffer> , 
+	imap <silent><buffer> ,
 				\ <Plug>(denite_filter_quit)
 	inoremap <silent><buffer><expr> <Esc>
 				\ denite#do_map('quit')
