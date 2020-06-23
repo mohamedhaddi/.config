@@ -6,6 +6,7 @@ set relativenumber
 set encoding=UTF-8
 set nohlsearch
 set autoread
+set paste
 syntax on
 let mapleader = ","
 autocmd CursorHold,CursorHoldI * update
