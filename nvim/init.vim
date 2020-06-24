@@ -89,6 +89,11 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " ===                             KEY MAPPINGS                             === "
 " ============================================================================ "
 
+" highlight current line
+set cursorline
+hi CursorLine   cterm=underline ctermbg=NONE ctermfg=NONE gui=underline guibg=NONE guifg=NONE
+"hi CursorColumn cterm=NONE ctermbg=white ctermfg=white guibg=white guifg=white
+
 " block arrow keys 
 nnoremap <Left> :echo "No left for you!"<CR>
 vnoremap <Left> :<C-u>echo "No left for you!"<CR>
