@@ -95,6 +95,11 @@ function fish_prompt --description 'Write out the prompt'
   # Write pipestatus
     set -l prompt_status (__fish_print_pipestatus " [" "]" "|" (set_color $fish_color_status) (set_color --bold $fish_color_status) $last_pipestatus)
 
-  echo -n -s $special "[" $me "$USER" $special "@" $host (prompt_hostname) $normal ' ' $pwd (prompt_pwd) $branch $gitbranch $normal $prompt_status $special "]" $normal $suffix " "
+    if test "prompt_hostname"="haddi-pc"
+        echo -n -s $special "[" $me "$USER" $special "@" $host "kali:" $normal ' ' $pwd (prompt_pwd) $branch $gitbranch $normal $prompt_status $special "]" $normal $suffix " "
+    else
+        echo -n -s $special "[" $me "$USER" $special "@kali:" $host (prompt_hostname) $normal ' ' $pwd (prompt_pwd) $branch $gitbranch $normal $prompt_status $special "]" $normal $suffix " "
+    end
 end
+
 funcsave fish_prompt 
