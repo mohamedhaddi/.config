@@ -29,6 +29,7 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+":CocInstall coc-clangd coc-css coc-emmet coc-eslint coc-html coc-json coc-markdownlint coc-pairs coc-prettier coc-tsserver
 Plug 'turbio/bracey.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
