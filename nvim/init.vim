@@ -12,7 +12,7 @@ autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
-" === Installing pluggins === "
+" === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'roxma/nvim-completion-manager'
@@ -190,11 +190,11 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 "inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " === Denite shorcuts === "
-"   ;         - Browser currently open buffers
+"   <leader>;         - Browser currently open buffers
 "   <leader>t - Browse list of files in current directory
 "   <leader>g - Search current directory for occurences of given term and close window if no results
 "   <leader>j - Search current directory for occurences of word under cursor
-nmap ; :Denite buffer<CR>
+nmap <leader>; :Denite buffer<CR>
 nmap <leader>t :DeniteProjectDir file/rec<CR>
 nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
@@ -328,7 +328,7 @@ catch
     echo 'Denite not installed. It should work after running :PlugInstall'
 endtry
 
-" === NERDTree setup ==="
+" === NERDTree setup === "
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -338,9 +338,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Toggle file explorer with ctrl+x
 nnoremap <silent> <C-x> :NERDTreeToggle<CR>
 
-" === Bracey setup ==="
+" === Bracey setup === "
 " let g:bracey_server_path="http://localhost"
 let g:bracey_server_port=8880
 " let g:bracey_browser_command='xdg-open'
 " let g:bracey_server_allow_remote_connections=1
 
+" === VimBeGood === "
+let g:vim_be_good_delete_me_offset = 0
