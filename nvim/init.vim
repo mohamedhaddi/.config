@@ -90,6 +90,8 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " ===                             KEY MAPPINGS                             === "
 " ============================================================================ "
 
+map <leader>w :w<CR>
+
 " highlight current line
 set cursorline
 hi CursorLine   cterm=underline ctermbg=NONE ctermfg=NONE gui=underline guibg=NONE guifg=NONE
