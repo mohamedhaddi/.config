@@ -11,7 +11,7 @@ set -U WTP "/mnt/c/Users/haddi/AppData/Local/Packages/Microsoft.WindowsTerminalP
 #		  #
 # === aliases === #
 #		  #
-alias v="nvim"
+alias v="./nvim-osx64/bin/nvim"
 funcsave v 
 
 alias vbg="v -c \"VimBeGood\""
