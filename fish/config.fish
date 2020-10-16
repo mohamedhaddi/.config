@@ -5,13 +5,11 @@ fish_vi_key_bindings
 # === variables === #
 #		    #
 set -x PATH $PATH:$HOME/.cargo/bin
-set -U WT "/mnt/c/Users/haddi/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json"
-set -U WTP "/mnt/c/Users/haddi/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/settings.json"
 
 #		  #
 # === aliases === #
 #		  #
-alias v="./nvim-osx64/bin/nvim"
+alias v="~/nvim-osx64/bin/nvim"
 funcsave v 
 
 alias vbg="v -c \"VimBeGood\""
@@ -23,14 +21,6 @@ funcsave iv
 alias cf="v ~/.config/fish/config.fish"
 funcsave cf
 
-alias ctf="cd /mnt/c/Users/haddi/Downloads/CTF"
-funcsave ctf
-
-#		    #
-# === functions === #
-#		    #
-function wh
-	cd "/mnt/c/Users/haddi/$argv"
-end
-funcsave wh
+alias cleanup="rm -rf ~/Library/**.42_cache_bak_** && rm -rf ~/**.42_cache_bak_** && rm -rf ~/Library/**.42_cache_bak* && rm -rf ~/**.42_cache_bak* && rm -r ~/Library/Caches/*; rm ~/.zcompdump* && brew update && brew upgrade && brew cleanup; brew doctor"
+funcsave cleanup
 
