@@ -11,11 +11,16 @@ let mapleader = ","
 autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
 
 " === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'roxma/nvim-completion-manager'
+" Plug 'roxma/nvim-completion-manager'
+" NCM2, formerly known as nvim-completion-manager, is a slim, fast and hackable completion framework for neovim.
+" Plug 'ncm2/ncm2'
+" Plug 'roxma/nvim-yarp'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'sheerun/vim-polyglot'
@@ -29,7 +34,7 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-":CocInstall coc-clangd coc-css coc-emmet coc-eslint coc-html coc-json coc-markdownlint coc-pairs coc-prettier coc-tsserver
+":CocInstall coc-clangd coc-css coc-emmet coc-eslint coc-html coc-json coc-markdownlint coc-pairs coc-prettier coc-tsserver coc-highlight
 Plug 'turbio/bracey.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'

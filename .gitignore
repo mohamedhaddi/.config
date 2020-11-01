@@ -4,3 +4,6 @@ fish.old/
 settigns.json
 fish/fish_variables
 fish/functions/
+coc/
+configstore/
+nvim/plugged/
