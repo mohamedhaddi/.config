@@ -3,5 +3,6 @@ configstore/
 enchant/
 fish/fish_variables
 fish/functions/
+nvim/plugged/
 fisher/
 gtk-2.0/

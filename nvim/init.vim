@@ -39,6 +39,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'yuttie/comfortable-motion.vim'
+Plug 'pbondoer/vim-42header'
 
 call plug#end()
 
