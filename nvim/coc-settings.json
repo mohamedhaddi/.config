@@ -1,10 +1,31 @@
 {
-  "suggest.echodocSupport": true,
-  "suggest.maxCompleteItemCount": 20,
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx", "css", "markdown", "html", "scss", "sass", "c"],
-  "prettier.tabWidth": 4,
-  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
-  "diagnostic.errorSign": "•",
-  "diagnostic.warningSign": "•",
-  "diagnostic.infoSign": "•"
+    "suggest.echodocSupport": true,
+    "suggest.maxCompleteItemCount": 20,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "javascriptreact",
+        "typescript.tsx",
+        "css",
+        "markdown",
+        "html",
+        "scss",
+        "sass",
+        "c"
+    ],
+    "python.formatting.provider": "black",
+    "prettier.tabWidth": 4,
+    "eslint.filetypes": [
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "javascriptreact",
+        "typescript.tsx"
+    ],
+    "diagnostic.errorSign": "•",
+    "diagnostic.warningSign": "•",
+    "diagnostic.infoSign": "•"
 }

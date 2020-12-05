@@ -13,6 +13,21 @@ set updatetime=2000
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
+let g:coc_global_extensions = [
+            \ 'coc-clangd', 
+            \ 'coc-css', 
+            \ 'coc-emmet', 
+            \ 'coc-eslint', 
+            \ 'coc-html', 
+            \ 'coc-json',
+            \ 'coc-markdownlint',
+            \ 'coc-pairs',
+            \ 'coc-prettier',
+            \ 'coc-tsserver',
+            \ 'coc-highlight',
+            \ 'coc-python',
+            \ 'coc-pyright'
+            \ ]
 
 " === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
@@ -33,8 +48,7 @@ else
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-":CocInstall coc-clangd coc-css coc-emmet coc-eslint coc-html coc-json coc-markdownlint coc-pairs coc-prettier coc-tsserver coc-highlight
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
 Plug 'turbio/bracey.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
