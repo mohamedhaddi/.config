@@ -1,1 +1,663 @@
-{}
+{
+  "coc-python|global": {
+    "INTERPRETERS_CACHE_v3_CondaEnvFileService": [],
+    "INTERPRETERS_CACHE_v3_CondaEnvService": [],
+    "INTERPRETERS_CACHE_v3_VirtualEnvService": [],
+    "/Users/mhaddi/.brew/bin/python3.8.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/mhaddi/.brew/bin/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.6-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.6-final"
+        },
+        "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "3c5aaaf5acb2802fd20dac863555c892878cf15af9960df4a4e467c8224f1c108f7349448e489e31c0051341040d103f22bd0f3fb3035d0ecf7bc493f33c7161"
+      },
+      "expiry": 1607240895295
+    },
+    "/Users/mhaddi/.brew/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/mhaddi/.brew/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.6-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.6-final"
+        },
+        "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "3c5aaaf5acb2802fd20dac863555c892878cf15af9960df4a4e467c8224f1c108f7349448e489e31c0051341040d103f22bd0f3fb3035d0ecf7bc493f33c7161"
+      },
+      "expiry": 1607240895296
+    },
+    "/usr/bin/python2.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python2.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "f54752f7a1e03869b8e3905f5a49f414f5bcd933374b331ba2d03d7cad03762c811b611bb57243a46e693104036bb156751040af54176999e186c1751c1341ba"
+      },
+      "expiry": 1607240895327
+    },
+    "/usr/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d"
+      },
+      "expiry": 1607240895353
+    },
+    "/usr/local/munki/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/usr/local/munki/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.4-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.4-final"
+        },
+        "sysPrefix": "/usr/local/munki/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/../../../../../../Versions/3.7",
+        "fileHash": "23ebb1e4d9f8897ce26d9059c689a812a474eb86809cebbd30fcd52a4c4eb2776f1a3ea0562aed2306210862fba04454bc99c292a7486c5a29fc0e4d8e1b97bf"
+      },
+      "expiry": 1607240895324
+    },
+    "INTERPRETERS_CACHE_v3_KnownPathsService": [
+      {
+        "architecture": 3,
+        "path": "/Users/mhaddi/.brew/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.6-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.6-final"
+        },
+        "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "3c5aaaf5acb2802fd20dac863555c892878cf15af9960df4a4e467c8224f1c108f7349448e489e31c0051341040d103f22bd0f3fb3035d0ecf7bc493f33c7161",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/mhaddi/.brew/bin/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.6-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.6-final"
+        },
+        "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "3c5aaaf5acb2802fd20dac863555c892878cf15af9960df4a4e467c8224f1c108f7349448e489e31c0051341040d103f22bd0f3fb3035d0ecf7bc493f33c7161",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "f54752f7a1e03869b8e3905f5a49f414f5bcd933374b331ba2d03d7cad03762c811b611bb57243a46e693104036bb156751040af54176999e186c1751c1341ba",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/local/munki/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.4-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 4,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.4-final"
+        },
+        "sysPrefix": "/usr/local/munki/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/../../../../../../Versions/3.7",
+        "fileHash": "23ebb1e4d9f8897ce26d9059c689a812a474eb86809cebbd30fcd52a4c4eb2776f1a3ea0562aed2306210862fba04454bc99c292a7486c5a29fc0e4d8e1b97bf",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python2.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "f54752f7a1e03869b8e3905f5a49f414f5bcd933374b331ba2d03d7cad03762c811b611bb57243a46e693104036bb156751040af54176999e186c1751c1341ba",
+        "type": "Unknown"
+      }
+    ],
+    "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.6-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.6-final"
+        },
+        "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068"
+      },
+      "expiry": 1607240895338
+    },
+    "INTERPRETERS_CACHE_v3_CurrentPathService": [
+      {
+        "architecture": 3,
+        "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.8.6-final",
+          "major": 3,
+          "minor": 8,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.8.6-final"
+        },
+        "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+        "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/usr/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "2.7.10-final",
+          "major": 2,
+          "minor": 7,
+          "patch": 10,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "2.7.10-final"
+        },
+        "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+        "fileHash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d",
+        "type": "Unknown"
+      }
+    ],
+    "InterpreterAutoSeletionRule-currentPath": {
+      "architecture": 3,
+      "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.6-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.6-final"
+      },
+      "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+      "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+      "type": "Unknown"
+    },
+    "PipEnvInformation": [],
+    "preferredGlobalPyInterpreter": {
+      "architecture": 3,
+      "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.6-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.6-final"
+      },
+      "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+      "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+      "type": "Unknown"
+    },
+    "/Users/mhaddi/.brew/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.8.6 64-bit",
+        "hash": "3c5aaaf5acb2802fd20dac863555c892878cf15af9960df4a4e467c8224f1c108f7349448e489e31c0051341040d103f22bd0f3fb3035d0ecf7bc493f33c7161-6e4ca6b43d8ea72863fcd661d9f301dd"
+      },
+      "expiry": 1607240895419
+    },
+    "/usr/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 2.7.10 64-bit",
+        "hash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d-90407ef92cd729c9ea75d5c38e86b91b"
+      },
+      "expiry": 1607240895421
+    },
+    "/usr/local/munki/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.4 64-bit",
+        "hash": "23ebb1e4d9f8897ce26d9059c689a812a474eb86809cebbd30fcd52a4c4eb2776f1a3ea0562aed2306210862fba04454bc99c292a7486c5a29fc0e4d8e1b97bf-4344fc313435081f55d451c224746795"
+      },
+      "expiry": 1607240895424
+    },
+    "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.8.6 64-bit",
+        "hash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068-f6ef40bdc1841ceffe814adce6ece510"
+      },
+      "expiry": 1607240895426
+    },
+    "InterpreterAutoSeletionRule-system": {
+      "architecture": 3,
+      "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.6-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.6-final"
+      },
+      "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+      "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+      "type": "Unknown",
+      "displayName": "Python 3.8.6 64-bit"
+    },
+    "/Users/mhaddi/.brew/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "3c5aaaf5acb2802fd20dac863555c892878cf15af9960df4a4e467c8224f1c108f7349448e489e31c0051341040d103f22bd0f3fb3035d0ecf7bc493f33c7161",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/mhaddi/.brew/bin/python3",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.8.6-final",
+            "major": 3,
+            "minor": 8,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.8.6-final"
+          },
+          "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+          "fileHash": "3c5aaaf5acb2802fd20dac863555c892878cf15af9960df4a4e467c8224f1c108f7349448e489e31c0051341040d103f22bd0f3fb3035d0ecf7bc493f33c7161",
+          "type": "Unknown",
+          "displayName": "Python 3.8.6 64-bit"
+        }
+      },
+      "expiry": 1607240895450
+    },
+    "/usr/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "2.7.10-final",
+            "major": 2,
+            "minor": 7,
+            "patch": 10,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "2.7.10-final"
+          },
+          "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
+          "fileHash": "ca1a43f26a768e78d161ab327071fab6d3bd3fa3c89c70e49a3bda32e4a07e30788c646a03d184a55902451f11bf5323df32e7f9426907a3d8b931bf6b947b7d",
+          "type": "Unknown",
+          "displayName": "Python 2.7.10 64-bit"
+        }
+      },
+      "expiry": 1607240895456
+    },
+    "/usr/local/munki/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "23ebb1e4d9f8897ce26d9059c689a812a474eb86809cebbd30fcd52a4c4eb2776f1a3ea0562aed2306210862fba04454bc99c292a7486c5a29fc0e4d8e1b97bf",
+        "info": {
+          "architecture": 3,
+          "path": "/usr/local/munki/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.4-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 4,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.4-final"
+          },
+          "sysPrefix": "/usr/local/munki/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/../../../../../../Versions/3.7",
+          "fileHash": "23ebb1e4d9f8897ce26d9059c689a812a474eb86809cebbd30fcd52a4c4eb2776f1a3ea0562aed2306210862fba04454bc99c292a7486c5a29fc0e4d8e1b97bf",
+          "type": "Unknown",
+          "displayName": "Python 3.7.4 64-bit"
+        }
+      },
+      "expiry": 1607240895461
+    },
+    "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.8.6-final",
+            "major": 3,
+            "minor": 8,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.8.6-final"
+          },
+          "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+          "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+          "type": "Unknown",
+          "displayName": "Python 3.8.6 64-bit"
+        }
+      },
+      "expiry": 1607240895467
+    },
+    "InterpreterAutoSeletionRule-cachedInterpreters": {
+      "architecture": 3,
+      "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.6-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.6-final"
+      },
+      "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+      "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+      "type": "Unknown",
+      "displayName": "Python 3.8.6 64-bit"
+    }
+  },
+  "coc-python|/Users/mhaddi/AoC": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:57a16a88e99a0bf592c2fe874ab26928": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:57a16a88e99a0bf592c2fe874ab26928": [],
+    "autoSelectedWorkspacePythonInterpreter-/Users/mhaddi/AoC": {
+      "architecture": 3,
+      "path": "/Users/mhaddi/.brew/opt/python@3.8/bin/python3.8",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.6-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.6-final"
+      },
+      "sysPrefix": "/Users/mhaddi/.brew/Cellar/python@3.8/3.8.6_2/Frameworks/Python.framework/Versions/3.8",
+      "fileHash": "f2e44da447633bb2adff3d029d9d2a8e57a290aa2164468d37878722bae186d26dd9e4b0135616440e343a83704a194b964e5d84c8b35fbec4d2cdab6320e068",
+      "type": "Unknown"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  }
+}
