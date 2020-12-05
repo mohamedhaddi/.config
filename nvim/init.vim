@@ -11,6 +11,20 @@ let mapleader = ","
 autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+let g:coc_global_extensions = [
+    \ 'coc-clangd',
+    \ 'coc-css',
+    \ 'coc-emmet',
+    \ 'coc-eslint',
+    \ 'coc-html',
+    \ 'coc-json',
+    \ 'coc-markdownlint',
+    \ 'coc-pairs',
+    \ 'coc-prettier',
+    \ 'coc-tsserver',
+    \ 'coc-python',
+    \ 'coc-pyright'
+  \ ]
 
 " === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
@@ -32,7 +46,7 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-":CocInstall coc-clangd coc-css coc-emmet coc-eslint coc-html coc-json coc-markdownlint coc-pairs coc-prettier coc-tsserver
+Plug 'neoclide/coc-prettier',
 Plug 'Shougo/denite.nvim'
 Plug 'turbio/bracey.vim'
 Plug 'scrooloose/nerdtree'
