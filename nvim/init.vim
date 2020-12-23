@@ -10,21 +10,23 @@ syntax on
 let mapleader = ","
 autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=8
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/Users/mhaddi/.brew/bin/python3'
 let g:coc_global_extensions = [
-    \ 'coc-clangd',
-    \ 'coc-css',
-    \ 'coc-emmet',
-    \ 'coc-eslint',
-    \ 'coc-html',
-    \ 'coc-json',
-    \ 'coc-markdownlint',
-    \ 'coc-pairs',
-    \ 'coc-prettier',
-    \ 'coc-tsserver',
-    \ 'coc-python',
-    \ 'coc-pyright'
-  \ ]
+            \ 'coc-clangd', 
+            \ 'coc-css', 
+            \ 'coc-emmet', 
+            \ 'coc-eslint', 
+            \ 'coc-html', 
+            \ 'coc-json',
+            \ 'coc-markdownlint',
+            \ 'coc-pairs',
+            \ 'coc-tsserver',
+            \ 'coc-highlight',
+            \ 'coc-python',
+            \ 'coc-pyright'
+            \ ]
 
 " === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
@@ -45,9 +47,7 @@ else
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-prettier',
-Plug 'Shougo/denite.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
 Plug 'turbio/bracey.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'

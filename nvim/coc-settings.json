@@ -2,6 +2,7 @@
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
   "coc.preferences.formatOnSaveFiletypes": [
+    "python",
     "javascript",
     "typescript",
     "typescriptreact",
@@ -13,9 +14,11 @@
     "html",
     "scss",
     "sass",
-    "c",
-    "python"
+    "c"
   ],
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
   "prettier.tabWidth": 4,
   "eslint.filetypes": [
     "javascript",
@@ -26,5 +29,6 @@
   ],
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
-  "diagnostic.infoSign": "•"
+  "diagnostic.infoSign": "•",
+  "clangd.path": "/Users/mhaddi/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
 }
