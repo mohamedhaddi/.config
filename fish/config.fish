@@ -21,6 +21,8 @@ funcsave iv
 alias cf="v ~/.config/fish/config.fish"
 funcsave cf
 
+alias c="clang -Wall -Wextra -Werror"
+
 function rm_caches
 	rm -rf ~/Library/**.42_cache_bak_**; rm -rf ~/**.42_cache_bak_**; rm -rf ~/Library/**.42_cache_bak*; rm -rf ~/**.42_cache_bak*; rm -r ~/Library/Caches/*; rm ~/.zcompdump*; rm -rf ~/.*42_cache_bak*; rm -rf ~/Library/.*42_cache_bak*
 end
