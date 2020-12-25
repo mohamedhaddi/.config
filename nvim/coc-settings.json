@@ -20,6 +20,7 @@
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "prettier.tabWidth": 4,
+  "eslint.nodePath": "/Users/mhaddi/.brew/lib/node_modules",
   "eslint.filetypes": [
     "javascript",
     "typescript",
