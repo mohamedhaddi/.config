@@ -13,6 +13,7 @@ set updatetime=2000
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 let g:coc_global_extensions = [
             \ 'coc-clangd', 
             \ 'coc-css', 
@@ -48,12 +49,14 @@ else
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
+Plug 'davidhalter/jedi-vim',
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
 Plug 'turbio/bracey.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'yuttie/comfortable-motion.vim'
+Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
 
 call plug#end()
 
