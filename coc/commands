@@ -1,4 +1,1 @@
-clangd.install
-python.enableLinting
-Python
-python.setLinter
+prettier.formatFile

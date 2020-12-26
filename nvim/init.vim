@@ -35,6 +35,7 @@ call plug#begin('~/.config/nvim/plugged')
 " NCM2, formerly known as nvim-completion-manager, is a slim, fast and hackable completion framework for neovim.
 " Plug 'ncm2/ncm2'
 " Plug 'roxma/nvim-yarp'
+Plug 'davidhalter/jedi-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'sheerun/vim-polyglot'
@@ -54,6 +55,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'pbondoer/vim-42header'
+Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
 
 call plug#end()
 
