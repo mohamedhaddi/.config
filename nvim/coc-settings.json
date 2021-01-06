@@ -17,6 +17,8 @@
         "c"
     ],
     "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
     "prettier.tabWidth": 4,
     "eslint.filetypes": [
         "javascript",
@@ -27,5 +29,6 @@
     ],
     "diagnostic.errorSign": "•",
     "diagnostic.warningSign": "•",
-    "diagnostic.infoSign": "•"
+    "diagnostic.infoSign": "•",
+    "clangd.path": "/home/haddi/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
 }

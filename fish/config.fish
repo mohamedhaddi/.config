@@ -4,7 +4,7 @@ fish_vi_key_bindings
 #		    #
 # === variables === #
 #		    #
-set -x PATH $PATH:$HOME/.cargo/bin
+set -gx PATH $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin $PATH
 set -U WT "/mnt/c/Users/haddi/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json"
 set -U WTP "/mnt/c/Users/haddi/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/settings.json"
 
@@ -25,6 +25,9 @@ funcsave cf
 
 alias ctf="cd /mnt/c/Users/haddi/Downloads/CTF"
 funcsave ctf
+
+alias c="clang -Wall -Wextra -Werror"
+funcsave c
 
 #		    #
 # === functions === #
