@@ -1,3 +1,4 @@
+filetype plugin on
 set guicursor=
 set laststatus=2
 set noshowmode
