@@ -11,16 +11,16 @@ syntax on
 let mapleader = ","
 autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+"set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
 let g:python3_host_prog = $HOME . '/.local/venv/nvim/bin/python'
 let g:coc_global_extensions = [
-            \ 'coc-clangd', 
-            \ 'coc-css', 
-            \ 'coc-emmet', 
-            \ 'coc-eslint', 
-            \ 'coc-html', 
+            \ 'coc-clangd',
+            \ 'coc-css',
+            \ 'coc-emmet',
+            \ 'coc-eslint',
+            \ 'coc-html',
             \ 'coc-json',
             \ 'coc-markdownlint',
             \ 'coc-pairs',
@@ -58,6 +58,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'Chiel92/vim-autoformat'
+" Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
@@ -97,11 +99,11 @@ endfunction
 nnoremap <c-n> :call OpenTerminal()<CR>
 
 " === WSL yank support === "
-let s:clip = '/mnt/c/Windows/System32/clip.exe' 
+let s:clip = '/mnt/c/Windows/System32/clip.exe'
 if executable(s:clip)
     augroup WSLYank
         autocmd!
-        "	autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, \"\<CR>")).' | '.s:clip)
+        " autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, \"\<CR>")).' | '.s:clip)
         autocmd TextYankPost * if v:event.operator ==# 'y' | call system('cat |' . s:clip, @0) | endif
     augroup END
 end
@@ -114,13 +116,13 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " ============================================================================ "
 
 map <leader>w :w<CR>
-
+nnoremap <c-z> <nop>
 " highlight current line
 set cursorline
 hi CursorLine   cterm=underline ctermbg=NONE ctermfg=NONE gui=underline guibg=NONE guifg=NONE
 "hi CursorColumn cterm=NONE ctermbg=white ctermfg=white guibg=white guifg=white
 
-" block arrow keys 
+" block arrow keys
 nnoremap <Left> :echo "No left for you!"<CR>
 vnoremap <Left> :<C-u>echo "No left for you!"<CR>
 inoremap <Left> <C-o>:echo "No left for you!"<CR>
@@ -371,3 +373,7 @@ let g:bracey_server_port=8880
 
 " === VimBeGood === "
 let g:vim_be_good_delete_me_offset = 0
+
+" === vim-autoformat === "
+" format on save
+au BufWrite * :Autoformat

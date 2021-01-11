@@ -1,18 +1,18 @@
 cd
 fish_vi_key_bindings
 
-#		    #
+#				#
 # === variables === #
-#		    #
+#				#
 set -gx PATH $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin $PATH
 set -U WT "/mnt/c/Users/haddi/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json"
 set -U WTP "/mnt/c/Users/haddi/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/settings.json"
 
-#		  #
+#			#
 # === aliases === #
-#		  #
+#			#
 alias v="nvim"
-funcsave v 
+funcsave v
 
 alias vbg="v -c \"VimBeGood\""
 funcsave vbg
@@ -29,9 +29,9 @@ funcsave ctf
 alias c="clang -Wall -Wextra -Werror"
 funcsave c
 
-#		    #
+#				#
 # === functions === #
-#		    #
+#				#
 function wh
 	cd "/mnt/c/Users/haddi/$argv"
 end

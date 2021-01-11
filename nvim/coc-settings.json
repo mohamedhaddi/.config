@@ -13,8 +13,7 @@
         "markdown",
         "html",
         "scss",
-        "sass",
-        "c"
+        "sass"
     ],
     "python.formatting.provider": "black",
     "python.linting.pylintEnabled": true,
