@@ -64,9 +64,11 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
 " Plug 'rhysd/vim-clang-format'
-" Plug 'cacharle/c_formatter_42.vim'
+Plug 'cacharle/c_formatter_42.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'alexandregv/norminette-vim'
 
 call plug#end()
 
@@ -383,4 +385,31 @@ let g:vim_be_good_delete_me_offset = 0
 
 " === vim-autoformat === "
 " format on save
-au BufWrite * :Autoformat
+" au BufWrite * :Autoformat
+
+" === norminette-vim === "
+" Enable norminette-vim (and clang)
+let g:syntastic_c_checkers = ['norminette', 'clang']
+let g:syntastic_aggregate_errors = 1
+
+" Set the path to norminette (do no set if using norminette of 42 mac)
+let g:syntastic_c_norminette_exec = '~/.norminette/norminette.rb'
+
+" Support headers (.h)
+let g:c_syntax_for_h = 1
+let g:syntastic_c_include_dirs = ['include', '../include', '../../include', 'libft', '../libft/include', '../../libft/include']
+
+" Pass custom arguments to norminette
+let g:syntastic_c_norminette_args = '-R CheckForbiddenSourceHeader'
+
+" Check errors when opening a file (disable to speed up startup time)
+let g:syntastic_check_on_open = 1
+
+" Enable error list
+" let g:syntastic_always_populate_loc_list = 1
+
+" Automatically open error list
+" let g:syntastic_auto_loc_list = 1
+
+" Skip check when closing
+let g:syntastic_check_on_wq = 0
