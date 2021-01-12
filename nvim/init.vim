@@ -66,6 +66,7 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'Chiel92/vim-autoformat'
 " Plug 'rhysd/vim-clang-format'
+" Plug 'cacharle/c_formatter_42.vim'
 
 call plug#end()
 
