@@ -29,6 +29,8 @@ funcsave ctf
 alias c="clang -Wall -Wextra -Werror"
 funcsave c
 
+alias norminette="~/.norminette/norminette.rb"
+
 #				#
 # === functions === #
 #				#
