@@ -12,7 +12,7 @@ set nohlsearch
 set autoread
 set termbidi
 syntax on
-let mapleader = ","
+let mapleader = " "
 autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
 set tabstop=4
@@ -69,6 +69,7 @@ Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'cacharle/c_formatter_42.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'alexandregv/norminette-vim'
+Plug 'unblevable/quick-scope'
 
 call plug#end()
 
@@ -244,7 +245,7 @@ nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 "   <C-h>         - Open currently selected file in a horizontal split
 autocmd FileType denite-filter call s:denite_filter_my_settings()
 function! s:denite_filter_my_settings() abort
-	imap <silent><buffer> ,
+	imap <silent><buffer> <leader>
 				\ <Plug>(denite_filter_quit)
 	inoremap <silent><buffer><expr> <Esc>
 				\ denite#do_map('quit')
@@ -413,3 +414,7 @@ let g:syntastic_check_on_open = 1
 
 " Skip check when closing
 let g:syntastic_check_on_wq = 0
+
+
+" === quick-scope === "
+highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=154 cterm=underline
