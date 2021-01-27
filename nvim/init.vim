@@ -421,4 +421,4 @@ highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=154 cterm=unde
 
 " === c_formatter_42 === "
 " format on save
-let g:c_formatter_42_format_on_save=0
+let g:c_formatter_42_format_on_save=1
