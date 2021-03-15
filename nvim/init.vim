@@ -6,15 +6,18 @@ set relativenumber
 set encoding=UTF-8
 set nohlsearch
 set autoread
+set termbidi
 syntax on
-let mapleader = ","
+let mapleader = " "
 autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
-set tabstop=8
+set tabstop=4
+set shiftwidth=4
+"set softtabstop=0 expandtab smarttab
 let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
 let g:python3_host_prog = '/Users/mhaddi/.brew/bin/python3'
 let g:coc_global_extensions = [
-            \ 'coc-clangd', 
             \ 'coc-css', 
             \ 'coc-emmet', 
             \ 'coc-eslint', 
@@ -31,31 +34,38 @@ let g:coc_global_extensions = [
 " === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
 
-" Plug 'roxma/nvim-completion-manager'
+" Plug 'roxma/nvim-completion-manager',
 " NCM2, formerly known as nvim-completion-manager, is a slim, fast and hackable completion framework for neovim.
-" Plug 'ncm2/ncm2'
-" Plug 'roxma/nvim-yarp'
-Plug 'davidhalter/jedi-vim'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'sheerun/vim-polyglot'
-Plug 'itchyny/lightline.vim'
-Plug 'christoomey/vim-system-copy'
+" Plug 'ncm2/ncm2',
+" Plug 'roxma/nvim-yarp',
+Plug 'SirVer/ultisnips',
+Plug 'honza/vim-snippets',
+Plug 'sheerun/vim-polyglot',
+Plug 'itchyny/lightline.vim',
+Plug 'christoomey/vim-system-copy',
 if has('nvim')
-    Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' },
 else
-    Plug 'Shougo/denite.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
+    Plug 'Shougo/denite.nvim',
+    Plug 'roxma/nvim-yarp',
+    Plug 'roxma/vim-hug-neovim-rpc',
 endif
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
-Plug 'turbio/bracey.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
-Plug 'yuttie/comfortable-motion.vim'
-Plug 'pbondoer/vim-42header'
-Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'davidhalter/jedi-vim',
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }},
+Plug 'turbio/bracey.vim',
+Plug 'scrooloose/nerdtree',
+Plug 'ryanoasis/vim-devicons',
+Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'},
+Plug 'yuttie/comfortable-motion.vim',
+Plug 'pbondoer/vim-42header',
+Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'},
+Plug 'Chiel92/vim-autoformat',
+Plug 'rhysd/vim-clang-format',
+Plug 'cacharle/c_formatter_42.vim',
+" Plug 'vim-syntastic/syntastic',
+Plug 'alexandregv/norminette-vim',
+Plug 'unblevable/quick-scope',
+Plug 'airblade/vim-rooter'
 
 call plug#end()
 
@@ -94,16 +104,6 @@ function! OpenTerminal()
 endfunction
 nnoremap <c-n> :call OpenTerminal()<CR>
 
-" === WSL yank support === "
-let s:clip = '/mnt/c/Windows/System32/clip.exe' 
-if executable(s:clip)
-    augroup WSLYank
-        autocmd!
-        "	autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, \"\<CR>")).' | '.s:clip)
-        autocmd TextYankPost * if v:event.operator ==# 'y' | call system('cat |' . s:clip, @0) | endif
-    augroup END
-end
-
 " === Setup Prettier command === "
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -112,6 +112,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " ============================================================================ "
 
 map <leader>w :w<CR>
+nnoremap <leader>siv :source $HOME/.config/nvim/init.vim<CR>
 
 " highlight current line
 set cursorline
@@ -231,7 +232,7 @@ nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
 "   <C-h>         - Open currently selected file in a horizontal split
 autocmd FileType denite-filter call s:denite_filter_my_settings()
 function! s:denite_filter_my_settings() abort
-    imap <silent><buffer> ,
+    imap <silent><buffer> <Space> 
                 \ <Plug>(denite_filter_quit)
     inoremap <silent><buffer><expr> <Esc>
                 \ denite#do_map('quit')
@@ -369,3 +370,41 @@ let g:bracey_server_port=8880
 
 " === VimBeGood === "
 let g:vim_be_good_delete_me_offset = 0
+
+" === vim-autoformat === "
+" format on save
+" au BufWrite * :Autoformat
+
+" === norminette-vim === "
+" Enable norminette-vim (and clang)
+let g:syntastic_c_checkers = ['norminette', 'clang']
+let g:syntastic_aggregate_errors = 1
+
+" Set the path to norminette (do no set if using norminette of 42 mac)
+" let g:syntastic_c_norminette_exec = '~/.norminette/norminette.rb'
+
+" Support headers (.h)
+let g:c_syntax_for_h = 1
+let g:syntastic_c_include_dirs = ['include', '../include', '../../include', 'libft', '../libft/include', '../../libft/include']
+
+" Pass custom arguments to norminette
+let g:syntastic_c_norminette_args = '-R CheckForbiddenSourceHeader'
+
+" Check errors when opening a file (disable to speed up startup time)
+let g:syntastic_check_on_open = 0
+
+" Enable error list
+let g:syntastic_always_populate_loc_list = 0
+
+" Automatically open error list
+let g:syntastic_auto_loc_list = 0
+
+" Skip check when closing
+let g:syntastic_check_on_wq = 0
+
+" === quick-scope === "
+highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=154 cterm=underline
+
+" === c_formatter_42 === "
+" format on save
+let g:c_formatter_42_format_on_save = 0
