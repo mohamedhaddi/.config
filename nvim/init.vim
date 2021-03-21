@@ -1,6 +1,3 @@
-" === vim-polyglot === "
-"let g:polyglot_disabled = ['autoindent']
-
 filetype plugin on
 set guicursor=
 set laststatus=2
@@ -40,10 +37,6 @@ let g:coc_global_extensions = [
 " === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
 
-" Plug 'roxma/nvim-completion-manager'
-" NCM2, formerly known as nvim-completion-manager, is a slim, fast and hackable completion framework for neovim.
-" Plug 'ncm2/ncm2'
-" Plug 'roxma/nvim-yarp'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'sheerun/vim-polyglot'
@@ -58,18 +51,15 @@ else
 endif
 Plug 'davidhalter/jedi-vim',
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
-Plug 'turbio/bracey.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'}
-" Plug 'Chiel92/vim-autoformat'
-" Plug 'rhysd/vim-clang-format'
 Plug 'cacharle/c_formatter_42.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'alexandregv/norminette-vim'
 Plug 'unblevable/quick-scope'
+Plug 'airblade/vim-rooter'
 
 call plug#end()
 
@@ -297,6 +287,9 @@ endfunction
 " ============================================================================ "
 " ===                           PLUGIN SETUP                               === "
 " ============================================================================ "
+
+" === vim-polyglot === "
+"let g:polyglot_disabled = ['autoindent']
 
 " === Denite setup ==="
 " Wrap in try/catch to avoid errors on initial install before plugin is available
