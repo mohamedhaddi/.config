@@ -224,28 +224,6 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 " === LeaderF === "
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
-let g:Lf_PopupPalette = {
-    \  'dark': {
-    \      'Lf_hl_match': {
-    \                'gui': '#282c34',
-    \                'font': 'NONE',
-    \                'guifg': 'NONE',
-    \                'guibg': '#282c34',
-    \                'cterm': 'NONE',
-    \                'ctermfg': 'NONE',
-    \                'ctermbg': '236'
-    \              },
-    \      'Lf_hl_cursorline': {
-    \                'gui': '#282c34'
-    \                'font': 'NONE',
-    \                'guifg': 'NONE',
-    \                'guibg': '#282c34',
-    \                'cterm': 'NONE',
-    \                'ctermfg': 'NONE',
-    \                'ctermbg': '236'
-    \              },
-    \      },
-    \  }
 
 " === vim-polyglot === "
 "let g:polyglot_disabled = ['autoindent']
