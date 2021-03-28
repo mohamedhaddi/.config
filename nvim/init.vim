@@ -19,6 +19,7 @@ let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
 let g:python3_host_prog = '/Users/mhaddi/.brew/bin/python3'
 let g:coc_global_extensions = [
+            \ 'coc-clangd',
             \ 'coc-css', 
             \ 'coc-emmet', 
             \ 'coc-eslint', 

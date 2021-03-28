@@ -1,3 +1,4 @@
+clangd.install
 prettier.formatFile
 python.enableLinting
 Python
