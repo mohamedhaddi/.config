@@ -53,7 +53,7 @@ Plug 'yuttie/comfortable-motion.vim',
 Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'},
 Plug 'cacharle/c_formatter_42.vim',
 " Plug 'vim-syntastic/syntastic',
-Plug 'alexandregv/norminette-vim',
+" Plug 'alexandregv/norminette-vim',
 Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
@@ -214,6 +214,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 " === LeaderF === "
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
+let g:Lf_UseMemoryCache = 0
 
 " === vim-polyglot === "
 "let g:polyglot_disabled = ['autoindent']
@@ -274,3 +275,4 @@ highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=154 cterm=unde
 " === c_formatter_42 === "
 " format on save
 let g:c_formatter_42_format_on_save = 0
+
