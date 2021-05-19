@@ -4,13 +4,16 @@ fish_vi_key_bindings
 #		    #
 # === variables === #
 #		    #
-set -gx PATH $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin $PATH
+set -gx PATH /opt/homebrew/bin $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin $PATH
 
 #		  #
 # === aliases === #
 #		  #
 alias v="~/nvim-osx64/bin/nvim"
 funcsave v 
+
+alias sv="sudo ~/nvim-osx64/bin/nvim"
+funcsave sv 
 
 alias vbg="v -c \"VimBeGood\""
 funcsave vbg
@@ -38,3 +41,7 @@ function cleanup
 	brew_cleanup
 end
 funcsave cleanup
+
+# Setting PATH for Python 3.9
+# The original version is saved in /Users/haddi/.config/fish/config.fish.pysave
+set -x PATH "/Library/Frameworks/Python.framework/Versions/3.9/bin" "$PATH"

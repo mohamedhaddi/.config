@@ -15,9 +15,8 @@ set updatetime=2000
 set tabstop=4
 set shiftwidth=4
 "set softtabstop=0 expandtab smarttab
-let g:python_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/usr/bin/python3'
-let g:python3_host_prog = '/Users/mhaddi/.brew/bin/python3'
+let g:python_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.9/bin/python3'
 let g:coc_global_extensions = [
             \ 'coc-clangd',
             \ 'coc-css', 
@@ -134,14 +133,14 @@ vnoremap <PageDown> :<C-u>echo "No page down for you!"<CR>
 inoremap <PageDown> <C-o>:echo "No page down for you!"<CR>
 
 " use alt+hjkl to move between split/vsplit panels
-tnoremap <A-h> <C-\><C-n><C-w>h
-tnoremap <A-j> <C-\><C-n><C-w>j
-tnoremap <A-k> <C-\><C-n><C-w>k
-tnoremap <A-l> <C-\><C-n><C-w>l
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
+tnoremap ˙ <C-\><C-n><C-w>h
+tnoremap ∆ <C-\><C-n><C-w>j
+tnoremap ˚ <C-\><C-n><C-w>k
+tnoremap ¬ <C-\><C-n><C-w>l
+nnoremap ˙ <C-w>h
+nnoremap ∆ <C-w>j
+nnoremap ˚ <C-w>k
+nnoremap ¬ <C-w>l
 
 " remapping split windows vertical resize
 nnoremap <C-S-l> :vertical resize +1<CR>
@@ -171,21 +170,21 @@ let g:comfortable_motion_scroll_up_key = "k"
 " === Coc.nvim === "
 " use <tab> for trigger completion and navigate to next complete item
 function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
+let col = col('.') - 1
+return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
 
 inoremap <silent><expr> <TAB>
-            \ pumvisible() ? "\<C-n>" :
-            \ <SID>check_back_space() ? "\<TAB>" :
-            \ coc#refresh()
+        \ pumvisible() ? "\<C-n>" :
+        \ <SID>check_back_space() ? "\<TAB>" :
+        \ coc#refresh()
 
 "Close preview window when completion is done.
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " Use <Tab> and <S-Tab> to navigate the completion list
-inoremap <expr> <A-S-j> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <A-S-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <C-S-j> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <C-S-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Use <cr> to confirm completion
 "(remove backslashes) inoremap <expr> <cr> pumvisible() ? \"\<C-y>" : \"\<C-g>u\<CR>"
