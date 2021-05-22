@@ -4,7 +4,8 @@ fish_vi_key_bindings
 #		    #
 # === variables === #
 #		    #
-set -gx PATH /opt/homebrew/bin $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin $PATH
+set -gx PATH $HOME/.config/coc/extensions/node_modules /opt/homebrew/bin $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin $PATH
+
 
 #		  #
 # === aliases === #
