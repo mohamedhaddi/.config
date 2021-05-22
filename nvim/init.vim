@@ -14,6 +14,7 @@ autocmd CursorHold,CursorHoldI * update
 set updatetime=2000
 set tabstop=4
 set shiftwidth=4
+set nofixendofline
 "set softtabstop=0 expandtab smarttab
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/bin/python3'
