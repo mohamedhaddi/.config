@@ -30,5 +30,5 @@
     "diagnostic.errorSign": "•",
     "diagnostic.warningSign": "•",
     "diagnostic.infoSign": "•",
-    "clangd.path": "/Users/haddi/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
+    "clangd.path": "/Volumes/Samsung_T5/home_dir/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
 }
