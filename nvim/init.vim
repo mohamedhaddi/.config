@@ -16,8 +16,8 @@ set tabstop=4
 set shiftwidth=4
 set nofixendofline
 "set softtabstop=0 expandtab smarttab
-let g:python_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.9/bin/python3'
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/Volumes/Samsung_T5/home_dir/homebrew/bin/python3'
 let g:coc_global_extensions = [
             \ 'coc-clangd',
             \ 'coc-css', 
