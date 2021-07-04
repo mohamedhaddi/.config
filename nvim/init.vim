@@ -57,6 +57,7 @@ Plug 'cacharle/c_formatter_42.vim',
 Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
