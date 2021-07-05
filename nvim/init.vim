@@ -57,6 +57,7 @@ Plug 'cacharle/c_formatter_42.vim',
 Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
@@ -144,10 +145,10 @@ nnoremap ˚ <C-w>k
 nnoremap ¬ <C-w>l
 
 " remapping split windows vertical resize
-nnoremap <C-S-l> :vertical resize +1<CR>
-nnoremap <C-S-h> :vertical resize -1<CR>
-nnoremap <C-S-k> :resize +1<CR>
-nnoremap <C-S-j> :resize -1<CR>
+nnoremap <C-L> :vertical resize +1<CR>
+nnoremap <C-H> :vertical resize -1<CR>
+nnoremap <C-K> :resize +1<CR>
+nnoremap <C-J> :resize -1<CR>
 
 " reload file to apply new changes
 nnoremap <F5> :e!<CR>
