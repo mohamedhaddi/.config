@@ -30,7 +30,8 @@ let g:coc_global_extensions = [
             \ 'coc-tsserver',
             \ 'coc-highlight',
             \ 'coc-python',
-            \ 'coc-pyright'
+            \ 'coc-pyright',
+            \ 'coc-svelte'
             \ ]
 
 " === Installing plugins === "
@@ -58,6 +59,9 @@ Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'zxqfl/tabnine-vim'
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'leafOfTree/vim-svelte-plugin'
 
 call plug#end()
 
