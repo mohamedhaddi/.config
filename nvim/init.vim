@@ -30,7 +30,8 @@ let g:coc_global_extensions = [
             \ 'coc-tsserver',
             \ 'coc-highlight',
             \ 'coc-python',
-            \ 'coc-pyright'
+            \ 'coc-pyright',
+            \ 'coc-svelte'
             \ ]
 
 " === Installing plugins === "
@@ -57,7 +58,8 @@ Plug 'cacharle/c_formatter_42.vim',
 Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-Plug 'zxqfl/tabnine-vim'
+Plug 'zxqfl/tabnine-vim',
+Plug 'leafOfTree/vim-svelte-plugin'
 
 call plug#end()
 
