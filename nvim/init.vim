@@ -58,7 +58,8 @@ Plug 'cacharle/c_formatter_42.vim',
 Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-Plug 'zxqfl/tabnine-vim'
+" Plug 'zxqfl/tabnine-vim'
+Plug 'github/copilot.vim'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'leafOfTree/vim-svelte-plugin'
