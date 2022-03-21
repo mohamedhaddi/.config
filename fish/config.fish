@@ -25,6 +25,8 @@ funcsave cf
 
 alias c="clang -Wall -Wextra -Werror"
 
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+
 function rm_caches
 	rm -rf ~/Library/**.42_cache_bak_**; rm -rf ~/**.42_cache_bak_**; rm -rf ~/Library/**.42_cache_bak*; rm -rf ~/**.42_cache_bak*; rm -r ~/Library/Caches/*; rm ~/.zcompdump*; rm -rf ~/.*42_cache_bak*; rm -rf ~/Library/.*42_cache_bak*
 end

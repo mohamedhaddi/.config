@@ -45,20 +45,21 @@ Plug 'honza/vim-snippets',
 Plug 'sheerun/vim-polyglot',
 Plug 'itchyny/lightline.vim',
 Plug 'christoomey/vim-system-copy',
-Plug 'davidhalter/jedi-vim',
+" Plug 'davidhalter/jedi-vim',
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }},
 Plug 'turbio/bracey.vim',
 Plug 'scrooloose/nerdtree',
 Plug 'ryanoasis/vim-devicons',
 Plug 'yuttie/comfortable-motion.vim',
 Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'},
-Plug 'cacharle/c_formatter_42.vim',
+" Plug 'cacharle/c_formatter_42.vim',
 " Plug 'vim-syntastic/syntastic',
 " Plug 'alexandregv/norminette-vim',
 Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-Plug 'zxqfl/tabnine-vim',
+" Plug 'zxqfl/tabnine-vim',
+Plug 'github/copilot.vim'
 Plug 'leafOfTree/vim-svelte-plugin'
 
 call plug#end()
@@ -135,6 +136,10 @@ inoremap <PageUp> <C-o>:echo "No page up for you!"<CR>
 nnoremap <PageDown> :echo "No page down for you!"<CR>
 vnoremap <PageDown> :<C-u>echo "No page down for you!"<CR>
 inoremap <PageDown> <C-o>:echo "No page down for you!"<CR>
+
+" Copilot cycling
+imap ‘ <M-]>
+imap “ <M-[>
 
 " use alt+hjkl to move between split/vsplit panels
 tnoremap ˙ <C-\><C-n><C-w>h
