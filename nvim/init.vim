@@ -41,13 +41,14 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'ThePrimeagen/vim-be-good',
 " Plug 'Chiel92/vim-autoformat',
 " Plug 'rhysd/vim-clang-format',
-Plug 'SirVer/ultisnips',
-Plug 'honza/vim-snippets',
+" Plug 'SirVer/ultisnips',
+" Plug 'honza/vim-snippets',
 Plug 'sheerun/vim-polyglot',
 Plug 'itchyny/lightline.vim',
 Plug 'christoomey/vim-system-copy',
 " Plug 'davidhalter/jedi-vim',
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }},
+" Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }},
+Plug 'neoclide/coc.nvim', {'branch': 'release'},
 Plug 'turbio/bracey.vim',
 Plug 'scrooloose/nerdtree',
 Plug 'ryanoasis/vim-devicons',
@@ -142,6 +143,10 @@ inoremap <PageDown> <C-o>:echo "No page down for you!"<CR>
 imap ‘ <M-]>
 imap “ <M-[>
 
+" Copilot replace <Tab> with <C-J>
+imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
+
 " use alt+hjkl to move between split/vsplit panels
 tnoremap ˙ <C-\><C-n><C-w>h
 tnoremap ∆ <C-\><C-n><C-w>j
@@ -196,28 +201,22 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 inoremap <expr> <C-S-j> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <C-S-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" Use <cr> to confirm completion
-"(remove backslashes) inoremap <expr> <cr> pumvisible() ? \"\<C-y>" : \"\<C-g>u\<CR>"
-
-" use <c-space>for trigger completion
-inoremap <silent><expr> <NUL> coc#refresh()
+" insert line on enter
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " go to definition, reference, implementation
 nmap <silent> <leader>dd <Plug>(coc-definition)
 nmap <silent> <leader>dr <Plug>(coc-references)
 nmap <silent> <leader>dj <Plug>(coc-implementation)
 
-" insert line on enter
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-" make <cr> select the first completion item and confirm the completion when no item has been selected
-"inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-
-" make coc.nvim format your code on <cr>
-"inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call ShowDocumentation()<CR>
+
+" Remap <C-f> and <C-b> for scroll float windows/popups.
+nnoremap <expr><C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+nnoremap <expr><C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+inoremap <expr><C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<Right>"
+inoremap <expr><C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<Left>"
 
 " ============================================================================ "
 " ===                           PLUGIN SETUP                               === "
