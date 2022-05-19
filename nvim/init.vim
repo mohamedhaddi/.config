@@ -31,7 +31,8 @@ let g:coc_global_extensions = [
             \ 'coc-highlight',
             \ 'coc-python',
             \ 'coc-pyright',
-            \ 'coc-svelte'
+            \ 'coc-svelte',
+            \ 'coc-docker'
             \ ]
 
 " === Installing plugins === "
