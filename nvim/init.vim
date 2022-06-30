@@ -29,7 +29,6 @@ let g:coc_global_extensions = [
             \ 'coc-pairs',
             \ 'coc-tsserver',
             \ 'coc-highlight',
-            \ 'coc-python',
             \ 'coc-pyright',
             \ 'coc-svelte'
             \ ]
@@ -37,32 +36,35 @@ let g:coc_global_extensions = [
 " === Installing plugins === "
 call plug#begin('~/.config/nvim/plugged')
 
-" Plug 'ThePrimeagen/vim-be-good',
-" Plug 'Chiel92/vim-autoformat',
-" Plug 'rhysd/vim-clang-format',
 Plug 'SirVer/ultisnips',
 Plug 'honza/vim-snippets',
 Plug 'sheerun/vim-polyglot',
 Plug 'itchyny/lightline.vim',
 Plug 'christoomey/vim-system-copy',
 Plug 'davidhalter/jedi-vim',
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }},
+" Plug 'neoclide/coc.nvim',
+" Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }},
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'turbio/bracey.vim',
 Plug 'scrooloose/nerdtree',
 Plug 'ryanoasis/vim-devicons',
 Plug 'yuttie/comfortable-motion.vim',
 Plug 'a-vrma/black-nvim', {'do': ':UpdateRemotePlugins'},
 Plug 'cacharle/c_formatter_42.vim',
-" Plug 'vim-syntastic/syntastic',
-" Plug 'alexandregv/norminette-vim',
 Plug 'unblevable/quick-scope',
 Plug 'airblade/vim-rooter'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-" Plug 'zxqfl/tabnine-vim'
 Plug 'github/copilot.vim'
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'leafOfTree/vim-svelte-plugin'
+
+" Plug 'ThePrimeagen/vim-be-good',
+" Plug 'Chiel92/vim-autoformat',
+" Plug 'rhysd/vim-clang-format',
+" Plug 'vim-syntastic/syntastic',
+" Plug 'alexandregv/norminette-vim',
+" Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
@@ -139,6 +141,10 @@ nnoremap <PageDown> :echo "No page down for you!"<CR>
 vnoremap <PageDown> :<C-u>echo "No page down for you!"<CR>
 inoremap <PageDown> <C-o>:echo "No page down for you!"<CR>
 
+" Copilot cycling
+imap ‘ <M-]>
+imap “ <M-[>
+
 " use alt+hjkl to move between split/vsplit panels
 tnoremap ˙ <C-\><C-n><C-w>h
 tnoremap ∆ <C-\><C-n><C-w>j
@@ -203,6 +209,9 @@ inoremap <silent><expr> <NUL> coc#refresh()
 nmap <silent> <leader>dd <Plug>(coc-definition)
 nmap <silent> <leader>dr <Plug>(coc-references)
 nmap <silent> <leader>dj <Plug>(coc-implementation)
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
 
 " insert line on enter
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"

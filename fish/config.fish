@@ -12,7 +12,7 @@ set MIN_INT -2147483648
 #		  #
 # === aliases === #
 #		  #
-alias v="~/nvim-osx64/bin/nvim"
+alias v="nvim"
 funcsave v 
 
 alias sv="sudo ~/nvim-osx64/bin/nvim"
