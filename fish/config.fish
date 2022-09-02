@@ -3,7 +3,7 @@ fish_vi_key_bindings
 #		    #
 # === variables === #
 #		    #
-set -gx PATH $HOME/.local/bin $HOME/.config/coc/extensions/node_modules /opt/homebrew/bin $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin $PATH
+set -gx PATH $HOME/.local/bin $HOME/.config/coc/extensions/node_modules $HOME/homebrew/bin $HOME/.cargo/bin $HOME/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin $PATH
 
 set MAX_INT 2147483647
 set MIN_INT -2147483648
@@ -11,10 +11,10 @@ set MIN_INT -2147483648
 #		  #
 # === aliases === #
 #		  #
-alias v="nvim"
+alias v="~/nvim-macos/bin/nvim"
 funcsave v 
 
-alias sv="sudo ~/nvim-osx64/bin/nvim"
+alias sv="sudo ~/nvim-macos/bin/nvim"
 funcsave sv 
 
 alias vbg="v -c \"VimBeGood\""
